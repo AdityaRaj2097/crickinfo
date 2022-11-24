@@ -21,6 +21,7 @@ function cb(error, response, html) {
 
   if (!fs.existsSync("./Ipl2020")) {
     // fs.mkdirSync(dir, 0744);
+    //  I have done my wokr
     fs.mkdir("./Ipl2020", function (err) {
       if (err) {
         console.log(err);
@@ -30,7 +31,6 @@ function cb(error, response, html) {
     });
   }
 
-  //   console.log(element.length);
   for (i = 0; i < element.length; i++) {
     // let data = element[i].attr("href");
     let isLossing = cheerioSelector(element[i]).attr("href");
