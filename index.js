@@ -31,7 +31,6 @@ function cb(error, response, html) {
     });
   }
 
-  //   console.log(element.length);
   for (i = 0; i < element.length; i++) {
     // let data = element[i].attr("href");
     let isLossing = cheerioSelector(element[i]).attr("href");
